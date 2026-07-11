@@ -10,6 +10,14 @@ function convertToRoman(num) {
     };
 
   //your code here
+	result = ""
+
+    for each (value, symbol) in roman_map:
+        while num >= value:
+            result = result + symbol
+            num = num - value
+
+    return result
 
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
