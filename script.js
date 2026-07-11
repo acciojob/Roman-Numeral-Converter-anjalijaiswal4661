@@ -12,15 +12,18 @@ function convertToRoman(num) {
   //your code here
 	result = ""
 
-    for(let [value, symbol] in obj){
-        while num >= value:
-            result = result + symbol
-            num = num - value
+    for (let i = 0; i < Object.keys(obj).length; i++) {
+    let [value, symbol] = obj[i];
 
-    return result}
+    while (num >= value) {
+      result += symbol;
+      num -= value;
+    }
+  }
 
+  return result;
 }
-// You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
+// by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
 console.log(convertToRoman(36));
 
