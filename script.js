@@ -12,7 +12,7 @@ function convertToRoman(num) {
   //your code here
 	result = ""
 
-    for each (value, symbol) in roman_map:
+    for each (value, symbol) in obj:
         while num >= value:
             result = result + symbol
             num = num - value
