@@ -12,12 +12,12 @@ function convertToRoman(num) {
   //your code here
 	result = ""
 
-    for(let [value, symbol] in obj):
+    for(let [value, symbol] in obj){
         while num >= value:
             result = result + symbol
             num = num - value
 
-    return result
+    return result}
 
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
